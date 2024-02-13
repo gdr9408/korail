@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #4E4E4E;
+}
+
+#container_wrap {
+  position: relative
+}
+.container {
+  max-width: 690px;
+  min-width: 300px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+
+.main {
+  text-align: center;
+}
+.main_img {
+  margin: 150px 0 80px;
+}
+.main_img img {
+  width: 150px;
+}
+.main_input {}
+
+.main_input [type=text] {
+  border:none;
+  width: 250px;
+  padding: 5px 10px;
+  margin: 10px 0;
+  font-size: 12px;
+}
+.main_txt {
+  margin: 100px 0;
+  color: #ccc;
+  font-size: 12px;
+
+}
+.main>a {
+  font-size: 12px;
+  color: #000;
+}
+
+
+
+
+
+
+
+nav {
+  background: #fbfbfb;
+  text-align: center;
+}
+nav>ul {
+}
+nav>ul>li {
+  display: inline-block;
+  padding: 0px 10px;
+  margin: 20px 0 45px;
+}
+nav>ul>li>a>img {
+  width: 18px;
+  margin-bottom: 10px;
+}
+nav>ul>li>a>p {
+  font-size: 12px;
+}
+
+
+
+
+/* gnb */
+.gnb {
+  width: 70%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: -70%;
+  color: #000;
+  background: #fff;
+  overflow: scroll;
+}
+
+.gnb_wrap {
+  padding: 70px 30px 0;
+}
+
+.gnbClose {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.gnbHead {
+  border-bottom: 1px solid #99d4ff;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 50px;
+  padding: 10px 0;
+}
+.gnbHead p {
+  font-weight: 500;
+}
+.gnbHead_icon img {
+  width: 24px;
+  margin-left: 10px;
+}
+.gnbMain {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.gnbMain p {
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+.gnbMain>ul {
+  padding: 10px 15px;
+}
+.gnbMain>ul>li{
+}
+.gnbMain>ul>li>a {
+  color: #858585;
+  line-height: 25px;
+  font-size: 14px;
+}
+footer {
+  background:  #99d4ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+.footer_img{
+}
+.footer_img img {
+}
+.footer_txt {
+  font-size: 8px;
+  line-height: 11px;
+  color: #fff;
+  text-align: end;
+}
+
+/* 슬라이더 메뉴가 튀어나온상태 */
+
+#container_wrap.on{
+  right: 70%;
+}
+
+#wrap.on+#lnb {
+  left: 0;
+}
+
+#wrap.on .cover {
+    opacity: 1;
+    visibility: visible;
+}
